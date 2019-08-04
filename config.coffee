@@ -14,7 +14,7 @@ config =
   REDIS:
     PREFIX: 'dealer'
     PORT: REDIS_PORT
-    HOST: env.REDIS_HOST
+    HOST: env.REDIS_CACHE_HOST
     HOST_KUE: env.REDIS_KUE_HOST
   ENVS:
     DEV: 'development'
