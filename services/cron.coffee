@@ -12,8 +12,9 @@ class CronService
   constructor: ->
     @crons = []
 
-    @addCron 'tenMin', '0 */10 * * * *', ->
-      CleanupService.cleanKue()
+    # shares kue with back-roads, so we can clean there
+    # @addCron 'tenMin', '0 */10 * * * *', ->
+    #   CleanupService.cleanKue()
 
   addCron: (key, time, fn) =>
     @crons.push new CronJob {

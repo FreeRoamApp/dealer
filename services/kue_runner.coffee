@@ -17,7 +17,6 @@ class KueRunnerService
     # if config.ENV isnt config.ENVS.DEV
     _.forEach TYPES, ({fn, concurrency}, type) ->
       KueService.process type, concurrency, (job, ctx, done) ->
-        console.log 'process'
         # KueCreateService.setCtx type, ctx
         fn job.data
         .then ->

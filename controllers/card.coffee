@@ -48,6 +48,7 @@ class Card
       urlMetadata(url, {timeout: TIMEOUT_MS})
       .then (data) =>
         card = @getCardFromData data
+        console.log callbackUrl, card
         request callbackUrl, {
           method: 'POST'
           body: {card, secret: config.DEALER_SECRET}

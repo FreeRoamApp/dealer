@@ -13,7 +13,8 @@ q = kue.createQueue {
     createClientFactory: ->
       new Redis {
         port: config.REDIS.PORT
-        host: config.REDIS.KUE_HOST
+        host: config.REDIS.HOST
+        # host: config.REDIS.HOST_KUE
       }
   }
 }
