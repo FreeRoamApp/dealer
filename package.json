@@ -38,7 +38,7 @@
     "pcg-random": "^1.0.0",
     "promise-router": "^0.2.2",
     "qs": "^6.3.0",
-    "redis": "^2.6.2",
+    "redis": "^3.1.1",
     "redlock": "^2.0.0",
     "remove": "^0.1.5",
     "request-promise": "^4.1.1",
